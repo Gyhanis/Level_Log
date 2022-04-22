@@ -16,7 +16,7 @@ will be removed before compilation, and will not
 hinder the performance at runtime.
 
 This tool works on GNU gcc 11.2.0, other compiler 
-is not yet testes.
+is not yet tested.
 
 ## Usage
 
