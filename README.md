@@ -64,12 +64,15 @@ And the output becomes:
         [ERROR]         This is a error message
         [WARNING]       A warning message with para 123
 
-Notice that levels higher than *WARNING*, which are *INFO* and *DEBUG*, are 
-removed. This is done by the preprocessor of the compiler. From the program's
-perspective, it runs as if the logging code were not existed in the source, 
+Notice that levels higher than *WARNING*, which 
+are *INFO* and *DEBUG*, are 
+removed. This is done by the preprocessor of the 
+compiler. From the program's
+perspective, it runs as if the logging code were 
+not existed in the source code, 
 instead of doing a `if` condictional branch.
 
-*NONE* (Level 0) is the smallest log level, an it removes all the logs even from *ERROR* :
+*NONE* (Level 0) is the smallest log level, an it removes all the logs, even from *ERROR* :
 
         $ gcc example.c -DLOG_LEVEL=0 -o example ; ./example
         $
